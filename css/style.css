@@ -86,13 +86,6 @@ p {
 	-ms-overflow-style: none; /* IE */
 }
 
-@media (max-width: 420px) {
-	body {
-		transform-origin: top center;
-		transform: scale(calc(100vw / 420));
-	}
-}
-
 *::-webkit-scrollbar {
 	display: none; /* Chrome, Safari */
 }
@@ -104,6 +97,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transform-origin: top center;
 }
 
 #content-container {
@@ -738,4 +732,12 @@ body {
 	cursor: pointer;
 	filter: brightness(0.8);
 	opacity: 0.8;
+}
+
+@media (max-width: 420px) {
+	body {
+		transform: scale(calc(100vw / 420));
+		/* prevent the scaled body from leaving empty space below */
+		margin-bottom: calc((100vw / 420 - 1) * -100vh);
+	}
 }
