@@ -1,0 +1,94 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<title>Verso</title>
+	</head>
+	<body>
+		<div id="top-nav">
+			<div>
+				<div id="top-nav-left">
+					<img src="/assets/icons/Chevron_Left.svg" onclick="window.location.href='create-project-info.html'" class="interactive-hover" />
+				</div>
+				<h2>CREATE</h2>
+				<div id="top-nav-right">
+					<button class="button-v2" onclick="window.location.href='create-project-cast.html'">NEXT</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="content-container">
+			<div id="create-section-container">
+				<h2>Crew</h2>
+				<p class="transparent-text">Add the crew to the project by department</p>
+			</div>
+
+			<div id="create-section-container">
+				<div class="subheading-type-1">
+					<h3>Director</h3>
+					<img src="/assets/icons/Edit_Pencil_01.svg" class="interactive-hover" />
+				</div>
+				<div class="collaborator-list" id="collaboratorList">
+					<div class="collaborator-card">
+						<div class="card-top">
+							<img class="card-avatar" src="/assets/faith-cruz.svg" alt="Faith Cruz" />
+							<span class="card-name">Faith Cruz (You)</span>
+							<button class="remove-btn interactive-hover">
+								<img src="/assets/icons/User_Remove.svg" />
+							</button>
+						</div>
+						<div class="role-input-row">
+							<input type="text" placeholder="Role..." />
+							<img src="assets/icons/Edit/Add_Plus.svg" class="interactive-hover"/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add collaborator button -->
+				<button class="add-user-btn" onclick="addCollaborator()">
+					<img src="/assets/icons/User_Add.svg" />
+				</button>
+			</div>
+			
+			<div id="create-section-container">
+				<div class="subheading-type-1">
+					<h3>Producers</h3>
+					<img src="/assets/icons/Edit_Pencil_01.svg" class="interactive-hover" />
+				</div>
+				<div class="collaborator-list" id="collaboratorList">
+					<div class="collaborator-card">
+						<div class="card-top">
+							<img class="card-avatar" src="/assets/harriet.svg" alt="Harriet Keith" />
+							<span class="card-name">Harriet Keith</span>
+							<button class="remove-btn interactive-hover">
+								<img src="/assets/icons/User_Remove.svg" />
+							</button>
+						</div>
+						<div class="role-input-row">
+							<input type="text" placeholder="Role..." />
+							<img src="assets/icons/Edit/Add_Plus.svg" class="interactive-hover"/>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Add collaborator button -->
+				<button class="add-user-btn" onclick="addCollaborator()">
+					<img src="/assets/icons/User_Add.svg" />
+				</button>
+			</div>
+
+			<div id="create-section-container">
+				<div class="subheading-type-1">
+					<h3 class="transparent-text">Add department</h3>
+					<img src="/assets/icons/Edit/Add_Plus.svg" class="interactive-hover" />
+				</div>
+			</div>
+		</div>
+
+		<div id="content-border"></div>
+		<div id="background"></div>
+	</body>
+</html>

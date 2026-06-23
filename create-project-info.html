@@ -1,0 +1,77 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<title>Verso</title>
+	</head>
+	<body>
+		<div id="top-nav">
+			<div>
+				<div id="top-nav-left">
+					<img src="/assets/icons/Chevron_Left.svg" onclick="window.location.href='index.html'" class="interactive-hover" />
+				</div>
+				<h2>CREATE</h2>
+				<div id="top-nav-right">
+					<button class="button-v2" onclick="window.location.href='create-project-crew.html'">NEXT</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="content-container">
+			<div id="upload-image" class="interactive-hover">
+				<img src="/assets/icons/Image_02.svg" />
+				<h4>Upload image</h4>
+			</div>
+
+			<div id="create-section-container">
+				<h4>Project title</h4>
+				<input class="input" type="text" placeholder="Project title..." />
+			</div>
+
+			<div id="create-section-container-v2">
+				<div id="half-width-input">
+					<h4>Release date</h4>
+					<div class="input-with-icon">
+						<img src="assets/icons/Calendar.svg" />
+						<input type="text" placeholder="03 / 2023" />
+					</div>
+				</div>
+				<div id="half-width-input">
+					<h4>Run Time</h4>
+					<div class="input-with-icon">
+						<img src="assets/icons/Timer.svg" />
+						<input type="text" placeholder="152 min" />
+					</div>
+				</div>
+			</div>
+
+			<div id="create-section-container">
+				<h4>Production dates</h4>
+				<div id="create-section-container-v2">
+					<div id="half-width-input">
+						<div class="input-with-icon">
+							<img src="assets/icons/Calendar.svg" />
+							<input type="text" placeholder="03 / 2023" />
+						</div>
+					</div>
+					<div id="half-width-input">
+						<div class="input-with-icon">
+							<img src="assets/icons/Calendar.svg" />
+							<input type="text" placeholder="03 / 2023" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="create-section-container">
+				<h4>Synopsis</h4>
+				<textarea class="textarea" placeholder="Write your synopsis..."></textarea>
+			</div>
+		</div>
+
+		<div id="content-border"></div>
+		<div id="background"></div>
+	</body>
+</html>

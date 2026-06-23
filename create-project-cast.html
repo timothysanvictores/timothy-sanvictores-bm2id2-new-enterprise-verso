@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<title>Verso</title>
+	</head>
+	<body>
+		<div id="top-nav">
+			<div>
+				<div id="top-nav-left">
+					<img src="/assets/icons/Chevron_Left.svg" onclick="window.location.href='create-project-crew.html'" class="interactive-hover" />
+				</div>
+				<h2>CREATE</h2>
+				<div id="top-nav-right">
+					<button class="button-v2 interactive-hover" onclick="window.location.href='create-project-preview.html'">NEXT</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="content-container">
+			<div id="create-section-container">
+				<h2>Cast</h2>
+				<p class="transparent-text">Add the cast to the project</p>
+			</div>
+
+			<div id="create-section-container">
+				<div class="collaborator-list" id="collaboratorList">
+					<div class="collaborator-card">
+						<div class="card-top">
+							<img class="card-avatar" src="/assets/shervonne.svg" alt="Shervonne Grierson" />
+							<span class="card-name">Shervonne Grierson</span>
+							<button class="remove-btn">
+								<img src="/assets/icons/User_Remove.svg" class="interactive-hover" />
+							</button>
+						</div>
+						<div class="role-input-row">
+							<input type="text" placeholder="Role..." />
+							<img src="assets/icons/Edit/Add_Plus.svg" class="interactive-hover" />
+						</div>
+					</div>
+				</div>
+
+				<!-- Add collaborator button -->
+				<button class="add-user-btn" onclick="addCollaborator()">
+					<img src="/assets/icons/User_Add.svg" class="interactive-hover" />
+				</button>
+			</div>
+		</div>
+
+		<div id="content-border"></div>
+		<div id="background"></div>
+	</body>
+</html>
