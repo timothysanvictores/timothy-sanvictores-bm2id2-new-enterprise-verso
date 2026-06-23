@@ -1,8 +1,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/css/style.css" />
+		<script type="module" src="/js/database.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 		<script src="/js/script.js" defer></script>
 		<title>Verso</title>
 	</head>
@@ -14,15 +16,15 @@
 		<div id="top-nav-v2">
 			<div>
 				<div id="top-nav-left">
-					<img src="/assets/icons/Add_Plus.svg" class="interactive-hover" />
+					<img src="/assets/icons/Add_Plus.svg" class="interactive-hover rotate" />
 				</div>
 				<h2></h2>
 				<div id="top-nav-right">
-					<img src="assets/icons/Interface/Settings_Future.svg" class="interactive-hover" />
+					<img src="assets/icons/Interface/Settings_Future.svg" class="interactive-hover rotate" />
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="content-container" class="content-container-padding">
 			<div id="profile-header">
 				<div id="profile-header-info">
@@ -45,12 +47,12 @@
 			<div id="profile-projects">
 				<div class="profile-sub-heading">
 					<h3>Projects</h3>
-					<img src="assets/icons/Add_Plus_small.svg" onclick="window.location.href='create-project-info.html'" class="interactive-hover" />
+					<img id="" src="assets/icons/Add_Plus_small.svg" onclick="window.location.href ='create-project-info.html'" class="interactive-hover rotate" />
 				</div>
-				<div class="project-card interactive-hover" onclick="window.location.href='genesis-project.html'">
-					<img src="assets/Rectangle 95.png"/>
+				<div class="project-card interactive-hover" onclick="window.location.href = 'genesis-project.html'">
+					<img src="assets/Rectangle 95.png" />
 					<div class="project-card-text">
-						<h5>Genesis</h5>
+						<h5 id=1></h5>
 						<p class="transparent-text">March 2025</p>
 						<div class="project-card-collaborators">
 							<div class="project-card-collaborators-img-container">
@@ -62,10 +64,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="project-card interactive-hover" onclick="window.location.href='crescendo-project.html'">
-					<img src="assets/Rectangle 93.png"/>
+				<div class="project-card interactive-hover" onclick="window.location.href = 'crescendo-project.html'">
+					<img src="assets/Rectangle 93.png" />
 					<div class="project-card-text">
-						<h5>Crescendo</h5>
+						<h5 id=2></h5>
 						<p class="transparent-text">March 2025</p>
 						<div class="project-card-collaborators">
 							<div class="project-card-collaborators-img-container">
